@@ -4,7 +4,7 @@ import { Observable, ReplaySubject, Subject, map, of } from "rxjs";
 import { MessagePayload } from "../models/messagePayload";
 import { ParameterData } from "../models/parameter-data";
 
-export const QuixChatRoom = 'Quix chatroom';
+export const QuixChatRoom = 'Andre Hackathon room';
 
 class RoomChange {
   roomId: string;
