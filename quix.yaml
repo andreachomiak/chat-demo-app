@@ -199,7 +199,7 @@ deployments:
   - name: Slack
     application: Slack
     deploymentType: Service
-    version: 30e1e3843e38a7036137853d3805a56f30f35e1b
+    version: 5f37b2a0acb99bb496bcdc83fc7fad2c8e98186d
     resources:
       cpu: 200
       memory: 200
@@ -212,10 +212,10 @@ deployments:
         required: true
         value: chat-with-sentiment
       - name: webhook_url
-        inputType: FreeText
+        inputType: Secret
         description: The webhook url to send notifications to
         required: true
-        value: https://hooks.slack.com/services/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
+        secretKey: slackWebhook
 
 # This section describes the Topics of the data pipeline
 topics:
