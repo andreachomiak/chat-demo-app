@@ -1,0 +1,16 @@
+name: Slack
+language: python
+variables:
+  - name: input
+    inputType: InputTopic
+    description: Name of the input topic to listen to.
+    defaultValue: chat-with-sentiment
+    required: true
+  - name: webhook_url
+    inputType: FreeText
+    description: The webhook url to send notifications to
+    defaultValue: https://hooks.slack.com/services/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
+    required: true
+dockerfile: dockerfile
+runEntryPoint: main.py
+defaultFile: quix_function.py
