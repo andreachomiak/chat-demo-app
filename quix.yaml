@@ -215,7 +215,7 @@ deployments:
         inputType: FreeText
         description: The webhook url to send notifications to
         required: true
-        value: https://hooks.slack.com/services/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
+        value: https://hooks.slack.com/services/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
 
 # This section describes the Topics of the data pipeline
 topics:
