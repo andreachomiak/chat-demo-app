@@ -9,7 +9,7 @@ deployments:
   - name: Chat Sentiment Analysis
     application: Sentiment analysis
     deploymentType: Service
-    version: de0529ab12e9f3f3dcd1928537296bc6112090c1
+    version: ce2581e4985bd9ba2ae0e695e04c28f608c413f3
     resources:
       cpu: 500
       memory: 1000
@@ -34,7 +34,7 @@ deployments:
   - name: Drafts Sentiment Analysis
     application: Drafts sentiment analysis
     deploymentType: Service
-    version: d49be638a568e2d209ec50a8eb2c6e2efbcc1e0f
+    version: ce2581e4985bd9ba2ae0e695e04c28f608c413f3
     resources:
       cpu: 500
       memory: 1000
@@ -57,7 +57,7 @@ deployments:
   - name: BigQuery Journeys
     application: BigQuery
     deploymentType: Service
-    version: bigquery-v1
+    version: ce2581e4985bd9ba2ae0e695e04c28f608c413f3
     resources:
       cpu: 500
       memory: 1000
@@ -96,7 +96,7 @@ deployments:
   - name: Twitch Chat
     application: Twitch Chat
     deploymentType: Service
-    version: b1bd9106b18a6da5c38f99b02dfdd7f5920bc2d6
+    version: ce2581e4985bd9ba2ae0e695e04c28f608c413f3
     resources:
       cpu: 500
       memory: 1000
@@ -131,7 +131,7 @@ deployments:
   - name: Project Front End
     application: Sentiment Demo UI
     deploymentType: Service
-    version: de0529ab12e9f3f3dcd1928537296bc6112090c1
+    version: ce2581e4985bd9ba2ae0e695e04c28f608c413f3
     resources:
       cpu: 500
       memory: 500
@@ -174,7 +174,7 @@ deployments:
   - name: Twitch Sentiment Analysis
     application: Sentiment analysis
     deploymentType: Service
-    version: sa-v2.0
+    version: ce2581e4985bd9ba2ae0e695e04c28f608c413f3
     resources:
       cpu: 500
       memory: 1000
