@@ -196,6 +196,26 @@ deployments:
         description: ''
         required: true
         value: 0
+  - name: Slack
+    application: Slack
+    deploymentType: Service
+    version: 30e1e3843e38a7036137853d3805a56f30f35e1b
+    resources:
+      cpu: 200
+      memory: 200
+      replicas: 1
+    desiredStatus: Running
+    variables:
+      - name: input
+        inputType: InputTopic
+        description: Name of the input topic to listen to.
+        required: true
+        value: chat-with-sentiment
+      - name: webhook_url
+        inputType: FreeText
+        description: The webhook url to send notifications to
+        required: true
+        value: https://hooks.slack.com/services/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
 
 # This section describes the Topics of the data pipeline
 topics:
