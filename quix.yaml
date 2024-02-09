@@ -54,45 +54,6 @@ deployments:
         description: This is the output for the Hugging Face model score
         required: true
         value: drafts_sentiment
-  - name: BigQuery Journeys
-    application: BigQuery
-    deploymentType: Service
-    version: ce2581e4985bd9ba2ae0e695e04c28f608c413f3
-    resources:
-      cpu: 500
-      memory: 1000
-      replicas: 1
-    desiredStatus: Stopped
-    variables:
-      - name: input
-        inputType: InputTopic
-        description: This is the input topic
-        required: true
-        value: chat-with-sentiment
-      - name: PROJECT_ID
-        inputType: FreeText
-        description: The BigQuery GCP Project ID
-        required: true
-        value: chatapp-396214
-      - name: DATASET_ID
-        inputType: FreeText
-        description: The target BigQuery dataset ID
-        required: true
-        value: chatapp
-      - name: DATASET_LOCATION
-        inputType: FreeText
-        description: Location of BigQuery dataset
-        required: true
-        value: europe-west3
-      - name: SERVICE_ACCOUNT_JSON
-        inputType: HiddenText
-        description: JSON string of the service account file for the BigQuery GCP project
-        required: true
-      - name: MAX_QUEUE_SIZE
-        inputType: FreeText
-        description: Max queue size for the sink ingestion
-        required: true
-        value: 50
   - name: Twitch Chat
     application: Twitch Chat
     deploymentType: Service
